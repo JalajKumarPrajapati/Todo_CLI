@@ -1,8 +1,10 @@
 const fs=require('fs');
+const filepath='./database.json'
+//'./todo.txt'
 
 //ReAD and write shortcut
 const Read_tasks=function(){
-    const txt_data=fs.readFileSync('./todo.txt','utf8')
+    const txt_data=fs.readFileSync(filepath,'utf8')
     if(txt_data==''){
         const arr=[]
         return arr
@@ -13,7 +15,7 @@ const Read_tasks=function(){
     }
 }
 const Write_tasks=function(data){
-    fs.writeFileSync('./todo.txt',JSON.stringify(data),'utf8'); 
+    fs.writeFileSync(filepath,JSON.stringify(data),'utf8'); 
 }
 
 const Todo=function(x){
