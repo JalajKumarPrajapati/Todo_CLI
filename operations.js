@@ -43,4 +43,4 @@ const deletetask=function(t_number){
 }
 
 //exports.write=write;
-module.exports={Todo,ChangeStatus,deletetask}
+module.exports={Todo,ChangeStatus,deletetask,Read_tasks}
